@@ -18,7 +18,14 @@ This script is designed to evaluate translation models efficiently using the **[
 | `--stop_token`   | Token indicating the end of the generated translation     |
 
 ---
-
+## requirement
+```cm
+pip install -q sacrebleu sacremoses bert-score torch transformers unbabel-comet evaluate rouge
+pip install -q git+https://github.com/google-research/bleurt.git
+pip install -q --upgrade "protobuf>=5.29.0" "numpy>=2.0.0,<3.0.0"
+pip install -q --upgrade transformers sentence-transformer
+pip install vllm 
+```
 ## ▶️ Example Usage
 
 ### Example 1: Cohere 8B Model
